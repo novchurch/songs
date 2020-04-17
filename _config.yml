@@ -1,6 +1,6 @@
 remote_theme: niklasbuschmann/contrast@v2.8
 title: Песеник
-author: Чисто Новороссийская святая молодежь
+author: Чисто Новороссийская святая молодёжь
 description: Сборник Песен Молодёжи Новороссийской Церкви Евангельских Христиан-Баптистов
 permalink: /:title/
 lang: "ru"
@@ -38,3 +38,6 @@ comments:
 plugins:
  - jekyll-remote-theme
  - jekyll-redirect-from
+
+sass:
+  style: compressed

@@ -67,3 +67,9 @@ defaults:
     values:
       sitemap:
         exclude: "yes"
+  -
+    scope:
+      path: "redirects.json" # Exclude from sitemap.xml
+    values:
+      sitemap:
+        exclude: "yes"

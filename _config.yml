@@ -1,4 +1,3 @@
-permalink: /:title/
 remote_theme: niklasbuschmann/contrast@v2.8
 
 plugins:

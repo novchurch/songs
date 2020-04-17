@@ -1,9 +1,9 @@
 remote_theme: niklasbuschmann/contrast@v2.8
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b> by <b><a href=\"https://github.com/niklasbuschmann\">@niklasbuschmann</a></b>"
+title: Песеник
+author: Чисто Новороссийская святая молодежь
+description: Сборник Песен Молодёжи Новороссийской Церкви Евангельских Христиан-Баптистов
 permalink: /:title/
-lang: "en"
+lang: "ru"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
@@ -27,8 +27,8 @@ navigation:
   - {file: "README.md", icon: address-card}
 
 external:                    # see http://fontawesome.com/icons
-#  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-#  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
+#  - {title: Mail, icon: envelope, url: "mailto:a1ip@users.noreply.github.com"}
+#  - {title: Github, icon: github, url: "https://github.com/novchurch/songs"}
 #  - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
@@ -37,3 +37,4 @@ comments:
 
 plugins:
  - jekyll-remote-theme
+ - jekyll-redirect-from

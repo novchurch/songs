@@ -1,4 +1,3 @@
-lang: "ru"
 permalink: /:title/
 remote_theme: niklasbuschmann/contrast@v2.8
 

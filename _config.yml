@@ -41,3 +41,28 @@ plugins:
 
 sass:
   style: compressed
+
+defaults:
+  -
+    scope:
+      path: "assets/img"
+    values:
+      image: true
+  -
+    scope:
+      path: "assets" # Exclude from sitemap.xml
+    values:
+      sitemap:
+        exclude: "yes"
+  -
+    scope:
+      path: "404.html" # Exclude from sitemap.xml
+    values:
+      sitemap:
+        exclude: "yes"
+  -
+    scope:
+      path: "README.md" # Exclude from sitemap.xml
+    values:
+      sitemap:
+        exclude: "yes"

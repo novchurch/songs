@@ -2,7 +2,6 @@ remote_theme: niklasbuschmann/contrast@v2.8
 
 plugins:
   - jekyll-remote-theme
-  - jekyll-redirect-from
 
 sass:
   style: compressed

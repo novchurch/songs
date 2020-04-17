@@ -1,0 +1,35 @@
+lang: "ru"
+permalink: /:title/
+remote_theme: niklasbuschmann/contrast@v2.8
+
+plugins:
+ - jekyll-remote-theme
+ - jekyll-redirect-from
+
+sass:
+  style: compressed
+
+defaults:
+  -
+    scope:
+      path: "assets/img"
+    values:
+      image: true
+  -
+    scope:
+      path: "assets" # Exclude from sitemap.xml
+    values:
+      sitemap:
+        exclude: "yes"
+  -
+    scope:
+      path: "404.html" # Exclude from sitemap.xml
+    values:
+      sitemap:
+        exclude: "yes"
+  -
+    scope:
+      path: "README.md" # Exclude from sitemap.xml
+    values:
+      sitemap:
+        exclude: "yes"

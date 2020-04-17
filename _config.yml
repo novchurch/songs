@@ -4,7 +4,7 @@ author: Чисто новороссийская святая молодёжь
 description: Сборник Песен Молодёжи Новороссийской Церкви Евангельских Христиан-Баптистов
 permalink: /:title/
 lang: "ru"
-baseurl: /songs/
+baseurl: /songs
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 

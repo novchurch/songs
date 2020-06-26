@@ -1,7 +1,8 @@
 <article>
   <header><h1>{{ include.title | default: page.title }}</h1></header>
   <ul class="archive">
-     {% for post in site.posts reversed %}
+    {% for post in site.posts %}{% assign post.num = post.slug | plus: 0 %}{% endfor %}
+    {% for post in site.posts | sort: 'num' %}
     <li>
       <a href="{{ post.url | relative_url }}">№ {{ post.slug }}. {{ post.title }}</a>
     </li>

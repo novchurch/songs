@@ -1,7 +1,7 @@
 <article>
   <header><h1>{{ include.title | default: page.title }}</h1></header>
   <ul class="archive">
-    {% assign sortedPosts = site.post | sort: 'title' %}
+    {% assign sortedPosts = site.posts | sort: 'title' %}
     {% for post in sortedPosts %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}. № {{ post.slug }}</a>

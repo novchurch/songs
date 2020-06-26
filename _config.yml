@@ -24,8 +24,8 @@ minimal: false               # use simpler style
 # Menu
 
 navigation:
-  - {file: "index.html", icon: home}
-  - {file: "README.md", icon: address-card}
+  - {file: "index.md", icon: home}
+  - {file: "alphabet.md", icon: address-card}
 
 external:                    # see http://fontawesome.com/icons
 #  - {title: Mail, icon: envelope, url: "mailto:a1ip@users.noreply.github.com"}

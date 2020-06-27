@@ -11,7 +11,7 @@ themecolor: "#40e0d0"
 
 # Layout
 
-sidebar: false               # show a sidebar instead of the usual header
+sidebar: true                # show a sidebar instead of the usual header
 show_excerpts: false         # show article excerpts on the home page
 show_related: true           # show the previous and next links after every post
 show_description: true       # show the site description in the sidebar
@@ -20,13 +20,13 @@ show_title: false            # always keep the site title visible
 # Styling
 
 dark_header: false           # always keep the header dark
-minimal: false               # use simpler style
+minimal: true                # use simpler style
 
 # Menu
 
 navigation:
-  - {file: "index.md", icon: home}
-  - {file: "alphabet.md", icon: address-card}
+  - {file: "index.md", title: "По номерам", icon: sort-numeric-down}
+  - {file: "alphabet.md", icon: sort-alpha-down}
 
 external:                    # see http://fontawesome.com/icons
 #  - {title: Mail, icon: envelope, url: "mailto:a1ip@users.noreply.github.com"}

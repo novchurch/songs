@@ -7,7 +7,7 @@ lang: "ru"
 # baseurl: /songs
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
-themecolor: "#000"
+themecolor: "#40e0d0"
 
 # Layout
 

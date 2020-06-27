@@ -1,5 +1,5 @@
 remote_theme: niklasbuschmann/contrast@v2.8
-title: Песенник
+title: Молодёжный Песенник
 author: Чисто новороссийская святая молодёжь
 description: Сборник Песен Молодёжи Новороссийской Церкви Евангельских Христиан-Баптистов
 permalink: /:title/
@@ -39,7 +39,6 @@ comments:
 
 plugins:
  - jekyll-remote-theme
- - jekyll-redirect-from
 
 compress_html:
   clippings: all
@@ -53,7 +52,7 @@ sass:
 defaults:
   -
     scope:
-      path: "assets/img"
+      path: "images"
     values:
       image: true
   -

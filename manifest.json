@@ -1,0 +1,9 @@
+{
+  "name": "Сборник Песен Молодёжи Новороссийской Церкви Евангельских Христиан-Баптистов",
+  "short_name": "Сборник Песен",
+  "theme_color": "#40e0d0",
+  "background_color": "#000",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "."
+}

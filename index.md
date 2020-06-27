@@ -1,6 +1,5 @@
 ---
 layout: default
-title: По номерам
 ---
 
 {% if site.show_excerpts %}

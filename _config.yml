@@ -86,3 +86,9 @@ defaults:
     values:
       sitemap:
         exclude: "yes"
+  -
+    scope:
+      path: "offline.md" # Exclude from sitemap.xml
+    values:
+      sitemap:
+        exclude: "yes"

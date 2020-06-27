@@ -6,9 +6,11 @@ const dynamicCacheName = 'dynamic-cache-v0';
 const staticAssets = [
     '{{ "/" | relative_url }}',
     '{{ "/index.html" | relative_url }}',
+    '{{ "/alphabet/" | relative_url }}',
+    {% for post in site.posts %}'{{ post.url | relative_url }}',{% endfor %}
     '{{ "/images/icons/icon-128x128.png" | relative_url }}',
     '{{ "/images/icons/icon-192x192.png" | relative_url }}',
-    '{{ "/offline.html" | relative_url }}',
+    '{{ "/offline/" | relative_url }}',
     '{{ "/assets/css/index.css" | relative_url }}',
     '{{ "/assets/css/classes.css" | relative_url }}',
     '{{ "/js/app.js" | relative_url }}',

@@ -4,7 +4,7 @@
     {% assign sortedPosts = site.posts | sort: 'title' %}
     {% for post in sortedPosts %}
     <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}. № {{ post.slug }}</a>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}. №&nbsp;{{ post.slug }}</a>
     </li>
     {% endfor %}
   </ul>

@@ -10,6 +10,9 @@ layout: compress
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+<link rel="icon" type="image/png" href="{{ "/images/icons/icon-128x128.png" | relative_url }}">
+<link rel="apple-touch-icon" href="{{ "/images/icons/icon-192x192.png" | relative_url }}">
 {% if site.minimal %}
 <link rel="stylesheet" href="{{ "/assets/css/minimal.css" | relative_url }}">
 {% else %}

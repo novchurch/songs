@@ -80,3 +80,9 @@ defaults:
     values:
       sitemap:
         exclude: "yes"
+  -
+    scope:
+      path: "manifest.json" # Exclude from sitemap.xml
+    values:
+      sitemap:
+        exclude: "yes"

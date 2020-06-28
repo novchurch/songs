@@ -58,10 +58,10 @@ async function checkOnline(req) {
         const cachedRes = await cache.match(req);
         if (cachedRes) {
             return cachedRes;
-        } else if (req.url.indexOf('.html') !== -1) {
-            return caches.match('{{ "/offline.html" | relative_url }}');
-        } else {
+        } else if (req.url.indexOf('.jpg') !== -1 || req.url.indexOf('.jpeg') !== -1 || req.url.indexOf('.png') !== -1  || req.url.indexOf('.svg') !== -1) {
             return caches.match('{{ "/images/no-image.jpg" | relative_url }}');
+        } else {
+            return caches.match('{{ "/offline/" | relative_url }}');
         }
     }
 }

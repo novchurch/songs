@@ -13,6 +13,8 @@ const staticAssets = [
     '{{ "/offline/" | relative_url }}',
     '{{ "/assets/css/index.css" | relative_url }}',
     '{{ "/assets/css/classes.css" | relative_url }}',
+    {% if site.sidebar %}'{{ "/assets/css/sidebar.css" | relative_url }}',{% endif %}
+    '{{ "/assets/fontawesome/icons.svg" | relative_url }}',
     '{{ "/js/app.js" | relative_url }}',
     '{{ "/images/no-image.jpg" | relative_url }}'
 ];

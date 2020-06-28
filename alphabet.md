@@ -1,6 +1,6 @@
 ---
 layout: default
-title: По&nbsp;алфавиту
+title: По алфавиту
 ---
 
 {% if site.show_excerpts %}

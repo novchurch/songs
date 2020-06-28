@@ -14,6 +14,8 @@ const staticAssets = [
     '{{ "/assets/css/index.css" | relative_url }}',
     '{{ "/assets/css/classes.css" | relative_url }}',
     {% if site.sidebar %}'{{ "/assets/css/sidebar.css" | relative_url }}',{% endif %}
+    '{{ "/assets/fonts/PTSans-Regular.woff" | relative_url }}',
+    '{{ "/assets/fonts/PTSans-Bold.woff" | relative_url }}',
     '{{ "/assets/fontawesome/icons.svg" | relative_url }}',
     '{{ "/js/app.js" | relative_url }}',
     '{{ "/images/no-image.jpg" | relative_url }}'

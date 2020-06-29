@@ -19,7 +19,7 @@ show_title: false            # always keep the site title visible
 
 # Styling
 
-dark_header: true          # always keep the header dark
+dark_header: false          # always keep the header dark
 minimal: false               # use simpler style
 highlight: false             # use code and table highlighting
 

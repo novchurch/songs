@@ -3,6 +3,7 @@
 @import index, font, basic, layout, highlight
 
 $theme-color: {{ site.themecolor }}
+$dark-theme-color: #065465
 $basic-font-size: clamp(1rem, calc(0.4rem + 4vw), 2rem)
 
 body > header, body > article, body > footer
@@ -155,3 +156,6 @@ article
 
 header.icons, footer.related
   background-color: $theme-color
+
+footer.related div span
+  color: $dark-theme-color

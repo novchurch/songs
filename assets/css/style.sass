@@ -2,6 +2,8 @@
 ---
 @import index, font, basic, layout, highlight
 
+$basic-font-size: clamp(1rem, 0.5rem (+2vw), 2rem)
+
 body > header, body > article, body > footer
   padding: 1.5em
 
@@ -134,8 +136,11 @@ body > footer
 
 {% endunless %}
 
-article, article p
-  font-size: clamp(1rem, 0.5rem (+2vw), 2rem)
+article
+  font-size: $basic-font-size
+  
+  p
+    font-size: $basic-font-size
 
   header h1
     font-size: clamp(1.4rem, 0.5rem (+4vw), 3rem)

@@ -8,3 +8,5 @@ title: По алфавиту
 {% else %}
   {% include alphabet.html title="Список песен в алфавитном порядке" %}
 {% endif %}
+
+{% include header.html %}

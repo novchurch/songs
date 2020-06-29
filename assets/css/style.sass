@@ -53,7 +53,7 @@ body > footer
 
 {% unless site.navigation and site.external %}
 
-header.icons a.title
+.icons .title
   font-size: 2em
 
 {% endunless %}
@@ -146,21 +146,21 @@ article
   header h1
     font-size: clamp(1.3rem, calc(0.5rem + 4vw), 2.5rem)
 
-  ul.archive
+  .archive
     list-style: none
     padding-left: 0
     
   .archive li
     font-size: $basic-font-size
 
-header.icons, footer.related
+.icons, .related
   background-color: $theme-color
   
   a
     color: $dark
     font-size: 1.6em
 
-footer.related div span
+.related div span
   color: $dark-theme-color
 
 .logo
@@ -175,3 +175,6 @@ footer.related div span
   
 .hidden
   display: inline-block
+
+.icons
+  padding: 1.75rem max(1.75rem, calc(38% - 12rem))

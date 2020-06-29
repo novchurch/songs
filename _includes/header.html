@@ -1,6 +1,6 @@
 <header class="icons">
   {% unless site.show_title != true and site.navigation and site.external %}
-    <a href="{{ "/" | relative_url }}" class="title"><img src="{{ "/images/icons/hymnbook.svg" | relative_url }}" alt="logo" class="logo">{{ site.title | escape }}</a>
+    <a href="{{ "/" | relative_url }}" class="title"><img src="{{ "/images/icons/hymnbook.svg" | relative_url }}" alt="{{ site.title | escape }}" class="logo"></a>
   {% endunless %}
   {% if site.navigation or site.external %}
     {% include menu.html menu=site.navigation icons=false %}

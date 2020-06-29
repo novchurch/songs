@@ -7,3 +7,5 @@ layout: default
 {% else %}
   {% include archive.html title="Список песен" %}
 {% endif %}
+
+{% include header.html %}

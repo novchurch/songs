@@ -61,8 +61,7 @@ header.icons a.title
 {% if site.sidebar %}
 
 .hidden
-  display: inline-block
-  //display: none
+  display: none
 
 {% endif %}
 
@@ -119,7 +118,8 @@ header.icons a.title
 
 .title
   font-size: 1.5em
-  margin: .5em -.8em;
+  margin: .5em -.8em
+  vertical-align: middle
 
 {% endif %}
 
@@ -170,3 +170,11 @@ footer.related div span
   border: 0
   margin: 0 0.4em 0 0
   padding: 0
+
+.title
+  font-size: 2em
+  margin: .5em -.8em
+  vertical-align: middle
+  
+.hidden
+  display: inline-block

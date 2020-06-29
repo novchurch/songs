@@ -12,9 +12,8 @@ const staticAssets = [
     '{{ "/images/icons/icon-192x192.png" | relative_url }}',
     '{{ "/offline/index.html" | relative_url }}',
     {% if site.minimal %}'{{ "/assets/css/minimal.css" | relative_url }}',
+    '{{ "/assets/css/classes.css" | relative_url }}',
     {% else %}'{{ "/assets/css/style.css" | relative_url }}',
-    {% endif %}
-    {% if site.highlight %}'{{ "/assets/css/classes.css" | relative_url }}',
     {% endif %}
     {% if site.sidebar %}'{{ "/assets/css/sidebar.css" | relative_url }}',
     {% endif %}

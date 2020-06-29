@@ -11,7 +11,7 @@ themecolor: "#40e0d0"
 
 # Layout
 
-sidebar: true                # show a sidebar instead of the usual header
+sidebar: false                # show a sidebar instead of the usual header
 show_excerpts: false         # show article excerpts on the home page
 show_related: true           # show the previous and next links after every post
 show_description: true       # show the site description in the sidebar
@@ -19,7 +19,7 @@ show_title: false            # always keep the site title visible
 
 # Styling
 
-dark_header: false           # always keep the header dark
+dark_header: true          # always keep the header dark
 minimal: false               # use simpler style
 highlight: false             # use code and table highlighting
 

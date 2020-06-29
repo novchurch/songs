@@ -19,6 +19,7 @@ const staticAssets = [
     {% endif %}
     '{{ "/assets/fonts/PTSans-Regular.woff" | relative_url }}',
     '{{ "/assets/fonts/PTSans-Bold.woff" | relative_url }}',
+    '{{ "/images/icons/hymnbook.svg" | relative_url }}',
     '{{ "/assets/fontawesome/icons.svg" | relative_url }}',
     '{{ "/js/app.js" | relative_url }}',
     '{{ "/images/no-image.jpg" | relative_url }}'

@@ -1,8 +1,8 @@
 ---
 ---
 {
-  "name": "Сборник Песен Молодёжи Новороссийской Церкви Евангельских Христиан-Баптистов",
-  "short_name": "Сборник Песен",
+  "name": "Песенник",
+  "short_name": "МолодёжныйПесенник",
   "theme_color": "{{ site.themecolor }}",
   "background_color": "#000",
   "display": "standalone",

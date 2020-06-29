@@ -11,8 +11,11 @@ const staticAssets = [
     '{{ "/images/icons/icon-128x128.png" | relative_url }}',
     '{{ "/images/icons/icon-192x192.png" | relative_url }}',
     '{{ "/offline/index.html" | relative_url }}',
-    '{{ "/assets/css/index.css" | relative_url }}',
-    '{{ "/assets/css/classes.css" | relative_url }}',
+    {% if site.minimal %}'{{ "/assets/css/minimal.css" | relative_url }}',
+    {% else %}'{{ "/assets/css/style.css" | relative_url }}',
+    {% endif %}
+    {% if site.highlight %}'{{ "/assets/css/classes.css" | relative_url }}',
+    {% endif %}
     {% if site.sidebar %}'{{ "/assets/css/sidebar.css" | relative_url }}',
     {% endif %}
     '{{ "/assets/fonts/PTSans-Regular.woff" | relative_url }}',

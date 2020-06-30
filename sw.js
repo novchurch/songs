@@ -1,7 +1,7 @@
 ---
 ---
-const staticCacheName = 'static-cache-v016';
-const dynamicCacheName = 'dynamic-cache-v016';
+const staticCacheName = 'static-cache-v017';
+const dynamicCacheName = 'dynamic-cache-v017';
 
 const staticAssets = [
     '{{ "/" | relative_url }}',

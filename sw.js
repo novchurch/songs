@@ -1,7 +1,7 @@
 ---
 ---
-const staticCacheName = 'static-cache-novchurch-songs-v001';
-const dynamicCacheName = 'dynamic-cache-novchurch-songs-v001';
+const staticCacheName = 'static-cache-novchurch-songs-v000';
+const dynamicCacheName = 'dynamic-cache-novchurch-songs-v000';
 
 const staticAssets = [
     '{{ "/" | relative_url }}',
@@ -63,7 +63,7 @@ async function checkOnline(req) {
         } else if (req.url.indexOf('.jpg') !== -1 || req.url.indexOf('.jpeg') !== -1 || req.url.indexOf('.png') !== -1  || req.url.indexOf('.svg') !== -1) {
             return caches.match('{{ "/images/no-image.jpg" | relative_url }}');
         } else {
-            return caches.match('{{ "/offline/index.html" | relative_url }}');
+            return caches.match('{{ "/offline/" | relative_url }}');
         }
     }
 }

@@ -18,6 +18,7 @@ const staticAssets = [
     '{{ "/images/icons/hymnbook.svg" | relative_url }}',
     '{{ "/images/icons/mask-hymnbook.svg" | relative_url }}',
     '{{ "/assets/fontawesome/icons.svg" | relative_url }}',
+    '{{ "/favicon.ico" | relative_url }}',
     '{{ "/js/app.js" | relative_url }}',
     '{{ "/images/no-image.jpg" | relative_url }}'
 ];

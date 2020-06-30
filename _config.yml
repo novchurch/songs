@@ -92,3 +92,9 @@ defaults:
     values:
       sitemap:
         exclude: "yes"
+  -
+    scope:
+      path: "googled65c54092638b5f1.html" # Exclude from sitemap.xml
+    values:
+      sitemap:
+        exclude: "yes"

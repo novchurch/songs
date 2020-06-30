@@ -164,7 +164,7 @@ article
   color: $dark-theme-color
 
 .logo
-  display: inline-block
+  display: none
   vertical-align: middle
   width: 2em
   height: 2em
@@ -183,7 +183,11 @@ article
     
   .icons .hidden
     display: none
-    
+
+@media (min-width: 15em)
+  .icons .logo
+    display: inline-block
+
 .icons
   padding: 1.75rem max(1.75rem, calc(38% - 12rem))
 

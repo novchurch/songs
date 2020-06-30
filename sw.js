@@ -1,7 +1,7 @@
 ---
 ---
-const staticCacheName = 'static-cache-v024';
-const dynamicCacheName = 'dynamic-cache-v024';
+const staticCacheName = 'static-cache-novchurch-songs-v000';
+const dynamicCacheName = 'dynamic-cache-novchurch-songs-v000';
 
 const staticAssets = [
     '.{{ "/" | relative_url }}',
@@ -25,11 +25,21 @@ const staticAssets = [
     '.{{ "/images/no-image.jpg" | relative_url }}'
 ];
 
-self.addEventListener('install', async event => {
+self.addEventListener('install', async (event) => {
+  console.log('[Service Worker] Install');
+  event.waitUntil(
+    caches.open(staticCacheName).then(function(cache) {
+      console.log('[Service Worker] Caching all content');
+      return cache.addAll(staticAssets);
+    })
+  );
+});
+
+/*self.addEventListener('install', async event => {
     const cache = await caches.open(staticCacheName);
     await cache.addAll(staticAssets);
     console.log('Service worker has been installed');
-});
+});*/
 
 self.addEventListener('activate', async event => {
     const cachesKeys = await caches.keys();

@@ -6,7 +6,9 @@ const dynamicCacheName = 'dynamic-cache-novchurch-songs-v000';
 const staticAssets = [
     '{{ "/" | relative_url }}',
     '{{ "/alphabet/" | relative_url }}',
-    {% for post in site.posts %}'{{ post.url | relative_url }}',{% endfor %}
+    {% for post in site.posts %}'{{ post.url | relative_url }}',
+    {% endfor %}
+    '{{ "/images/icons/icon-144x144.png" | relative_url }}',
     '{{ "/images/icons/icon-180x180.png" | relative_url }}',
     '{{ "/images/icons/icon-512x512.png" | relative_url }}',
     '{{ "/offline/" | relative_url }}',

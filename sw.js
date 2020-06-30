@@ -1,15 +1,15 @@
 ---
 ---
-const staticCacheName = 'static-cache-v020';
-const dynamicCacheName = 'dynamic-cache-v020';
+const staticCacheName = 'static-cache-v021';
+const dynamicCacheName = 'dynamic-cache-v021';
 
 const staticAssets = [
     '{{ "/" | relative_url }}',
     '{{ "/index.html" | relative_url }}',
     '{{ "/alphabet/index.html" | relative_url }}',
     {% for post in site.posts %}'{{ post.url | relative_url }}index.html',{% endfor %}
-    '{{ "/images/icons/icon-128x128.png" | relative_url }}',
-    '{{ "/images/icons/icon-192x192.png" | relative_url }}',
+    '{{ "/images/icons/icon-180x180.png" | relative_url }}',
+    '{{ "/images/icons/icon-512x512.png" | relative_url }}',
     '{{ "/offline/index.html" | relative_url }}',
     {% if site.minimal %}'{{ "/assets/css/minimal.css" | relative_url }}',
     '{{ "/assets/css/classes.css" | relative_url }}',
@@ -20,6 +20,7 @@ const staticAssets = [
     '{{ "/assets/fonts/PTSans-Regular.woff" | relative_url }}',
     '{{ "/assets/fonts/PTSans-Bold.woff" | relative_url }}',
     '{{ "/images/icons/hymnbook.svg" | relative_url }}',
+    '{{ "/images/icons/mask-hymnbook.svg" | relative_url }}',
     '{{ "/assets/fontawesome/icons.svg" | relative_url }}',
     '{{ "/js/app.js" | relative_url }}',
     '{{ "/images/no-image.jpg" | relative_url }}'

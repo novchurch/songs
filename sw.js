@@ -4,26 +4,26 @@ const staticCacheName = 'static-cache-v023';
 const dynamicCacheName = 'dynamic-cache-v023';
 
 const staticAssets = [
-    './',
-    './index.html',
-    './alphabet/index.html',
-    {% for post in site.posts %}'.{{ post.url }}index.html',{% endfor %}
-    './images/icons/icon-180x180.png',
-    './images/icons/icon-512x512.png',
-    './offline/index.html',
-    {% if site.minimal %}'{{ "./assets/css/minimal.css" }}',
-    '{{ "./assets/css/classes.css" }}',
-    {% else %}'{{ "./assets/css/style.css" }}',
+    '.{{ "/" | relative_url }}',
+    '.{{ "/index.html" | relative_url }}',
+    '.{{ "/alphabet/index.html" | relative_url }}',
+    {% for post in site.posts %}'.{{ post.url | relative_url }}index.html',{% endfor %}
+    '.{{ "/images/icons/icon-180x180.png" | relative_url }}',
+    '.{{ "/images/icons/icon-512x512.png" | relative_url }}',
+    '.{{ "/offline/index.html" | relative_url }}',
+    {% if site.minimal %}'.{{ "/assets/css/minimal.css" | relative_url }}',
+    '.{{ "/assets/css/classes.css" | relative_url }}',
+    {% else %}'.{{ "/assets/css/style.css" | relative_url }}',
     {% endif %}
-    {% if site.sidebar %}'{{ "./assets/css/sidebar.css" }}',
+    {% if site.sidebar %}'.{{ "/assets/css/sidebar.css" | relative_url }}',
     {% endif %}
-    './assets/fonts/PTSans-Regular.woff',
-    './assets/fonts/PTSans-Bold.woff',
-    './images/icons/hymnbook.svg',
-    './images/icons/mask-hymnbook.svg',
-    './assets/fontawesome/icons.svg',
-    './js/app.js',
-    './images/no-image.jpg'
+    '.{{ "/assets/fonts/PTSans-Regular.woff" | relative_url }}',
+    '.{{ "/assets/fonts/PTSans-Bold.woff" | relative_url }}',
+    '.{{ "/images/icons/hymnbook.svg" | relative_url }}',
+    '.{{ "/images/icons/mask-hymnbook.svg" | relative_url }}',
+    '.{{ "/assets/fontawesome/icons.svg" | relative_url }}',
+    '.{{ "/js/app.js" | relative_url }}',
+    '.{{ "/images/no-image.jpg" | relative_url }}'
 ];
 
 self.addEventListener('install', async event => {
@@ -64,9 +64,9 @@ async function checkOnline(req) {
         if (cachedRes) {
             return cachedRes;
         } else if (req.url.indexOf('.jpg') !== -1 || req.url.indexOf('.jpeg') !== -1 || req.url.indexOf('.png') !== -1  || req.url.indexOf('.svg') !== -1) {
-            return caches.match('./images/no-image.jpg');
+            return caches.match('.{{ "/images/no-image.jpg" | relative_url }}');
         } else {
-            return caches.match('./offline/index.html');
+            return caches.match('.{{ "/offline/index.html" | relative_url }}');
         }
     }
 }

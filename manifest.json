@@ -61,12 +61,12 @@
       "purpose": "maskable"
     },
     {
-      "src": "/images/icons/hymnbook.svg",
+      "src": "images/icons/hymnbook.svg",
       "sizes": "512x512",
       "type": "image/svg+xml"
     },
     {
-      "src": "/images/icons/mask-hymnbook.svg",
+      "src": "images/icons/mask-hymnbook.svg",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "maskable"

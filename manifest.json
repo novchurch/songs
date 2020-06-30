@@ -4,7 +4,7 @@
   "name": "Песенник",
   "short_name": "МолодёжныйПесенник",
   "theme_color": "{{ site.themecolor }}",
-  "background_color": "#000",
+  "background_color": "#fff",
   "display": "standalone",
   "orientation": "portrait",
   "start_url": ".",
@@ -12,14 +12,12 @@
     {
       "src": "images/icons/icon-72x72.png",
       "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/png"
     },
     {
       "src": "images/icons/icon-96x96.png",
       "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/png"
     },
     {
       "src": "images/icons/icon-128x128.png",
@@ -34,6 +32,11 @@
     {
       "src": "images/icons/icon-152x152.png",
       "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-180x180.png",
+      "sizes": "180x180",
       "type": "image/png"
     },
     {
@@ -55,6 +58,17 @@
       "src": "images/icons/maskable_icon.png",
       "sizes": "512x512",
       "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/icons/hymnbook.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/images/icons/mask-hymnbook.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
       "purpose": "maskable"
     }
   ],

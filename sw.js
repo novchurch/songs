@@ -1,21 +1,19 @@
 ---
 ---
-const staticCacheName = 'static-cache-novchurch-songs-v001';
-const dynamicCacheName = 'dynamic-cache-novchurch-songs-v001';
+const staticCacheName = 'static-cache-novchurch-songs-v000';
+const dynamicCacheName = 'dynamic-cache-novchurch-songs-v000';
 
 const staticAssets = [
     '.{{ "/" | relative_url }}',
-    '.{{ "/index.html" | relative_url }}',
-    '.{{ "/alphabet/index.html" | relative_url }}',
-    {% for post in site.posts %}'.{{ post.url | relative_url }}index.html',{% endfor %}
+    '.{{ "/alphabet/" | relative_url }}',
+    {% for post in site.posts %}'.{{ post.url | relative_url }}',{% endfor %}
     '.{{ "/images/icons/icon-180x180.png" | relative_url }}',
     '.{{ "/images/icons/icon-512x512.png" | relative_url }}',
-    '.{{ "/offline/index.html" | relative_url }}',
+    '.{{ "/offline/" | relative_url }}',
     {% if site.minimal %}'.{{ "/assets/css/minimal.css" | relative_url }}',
     '.{{ "/assets/css/classes.css" | relative_url }}',
     {% else %}'.{{ "/assets/css/style.css" | relative_url }}',
-    {% endif %}{% if site.sidebar %}'.{{ "/assets/css/sidebar.css" | relative_url }}',
-    {% endif %}
+    {% endif %}{% if site.sidebar %}'.{{ "/assets/css/sidebar.css" | relative_url }}',{% endif %}
     '.{{ "/assets/fonts/PTSans-Regular.woff" | relative_url }}',
     '.{{ "/assets/fonts/PTSans-Bold.woff" | relative_url }}',
     '.{{ "/images/icons/hymnbook.svg" | relative_url }}',
@@ -24,16 +22,6 @@ const staticAssets = [
     '.{{ "/js/app.js" | relative_url }}',
     '.{{ "/images/no-image.jpg" | relative_url }}'
 ];
-
-/*self.addEventListener('install', async (event) => {
-  console.log('[Service Worker] Install');
-  event.waitUntil(
-    caches.open(staticCacheName).then(function(cache) {
-      console.log('[Service Worker] Caching all content');
-      return cache.addAll(staticAssets);
-    })
-  );
-});*/
 
 self.addEventListener('install', async event => {
     const cache = await caches.open(staticCacheName);

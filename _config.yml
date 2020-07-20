@@ -62,15 +62,15 @@ defaults:
     values:
       sitemap:
         exclude: "yes"
-    -
+  -
     scope:
       path: "js" # Exclude from sitemap.xml
     values:
       sitemap:
         exclude: "yes"
-    -
+  -
     scope:
-      path: "assets" # Exclude from sitemap.xml
+      path: "sw.js" # Exclude from sitemap.xml
     values:
       sitemap:
         exclude: "yes"

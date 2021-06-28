@@ -1,16 +1,24 @@
 ---
 ---
-const staticCacheName = 'static-cache-novchurch-songs-v008';
-const dynamicCacheName = 'dynamic-cache-novchurch-songs-v008';
+const staticCacheName = 'static-cache-novchurch-songs-v009';
+const dynamicCacheName = 'dynamic-cache-novchurch-songs-v009';
 
 const staticAssets = [
     '{{ "/" | relative_url }}',
     '{{ "/alphabet/" | relative_url }}',
-    {% for post in site.posts %}'{{ post.url | relative_url }}',
-    {% endfor %}'{{ "/offline/" | relative_url }}',
-    {% if site.minimal %}'{{ "/assets/css/minimal.css" | relative_url }}',
+    {% for post in site.posts -%}
+    '{{ post.url | relative_url }}',
+    {% endfor -%}
+    '{{ "/offline/" | relative_url }}',
+    {% if site.minimal -%}
+    '{{ "/assets/css/minimal.css" | relative_url }}',
     '{{ "/assets/css/classes.css" | relative_url }}',
-    {% else %}'{{ "/assets/css/style.css" | relative_url }}',{% endif %}{% if site.sidebar %}'{{ "/assets/css/sidebar.css" | relative_url }}',{% endif %}
+    {% else -%}
+    '{{ "/assets/css/style.css" | relative_url }}',
+    {%- endif -%}
+    {% if site.sidebar -%}
+    '{{ "/assets/css/sidebar.css" | relative_url }}',
+    {%- endif %}
     '{{ "/assets/fonts/PTSans-Regular.woff" | relative_url }}',
     '{{ "/assets/fonts/PTSans-Bold.woff" | relative_url }}',
     '{{ "/images/icons/hymnbook.svg" | relative_url }}',

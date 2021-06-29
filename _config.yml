@@ -21,7 +21,6 @@ show_title: false            # always keep the site title visible
 
 dark_header: false          # always keep the header dark
 minimal: false               # use simpler style
-highlighter: none
 markdown: kramdown
 kramdown:
   syntax_highlighter_opts:

@@ -1,7 +1,7 @@
 ---
 ---
-const staticCacheName = 'static-cache-novchurch-songs-v018';
-const dynamicCacheName = 'dynamic-cache-novchurch-songs-v018';
+const staticCacheName = 'static-cache-novchurch-songs-v019';
+const dynamicCacheName = 'dynamic-cache-novchurch-songs-v019';
 
 const staticAssets = [
     '{{ "/" | relative_url }}',

@@ -4,6 +4,12 @@
   <img width="192" height="192" src="images/icons/icon-192x192.png" alt="Сборник Песен Молодёжи Новороссийской Церкви Евангельских Христиан-Баптистов">
 </p>
 
+[![Progressive Web App](https://www.pwa-shields.com/1.0.0/series/install/purple.svg)](https://developers.google.com/web/progressive-web-apps/)
+[![Web Site Made with Jekyll](https://img.shields.io/badge/jekyll-3.9.0-blue.svg)](https://jekyllrb.com)
+[![Theme Contrast](https://img.shields.io/badge/theme-contrast-blue.svg)](https://github.com/niklasbuschmann/contrast)
+[![Powered by Liquid Templates](https://img.shields.io/badge/liquid-4.0.3-blue.svg)](https://shopify.github.io/liquid/)
+[![Powered by SASS CSS pre-processor](https://img.shields.io/badge/sass-3.7.4-blue.svg)](https://sass-lang.com)
+
 Это не просто сайт, но и приложение, которое можно установить на рабочий стол компьютера (или любого гаджета) и использовать без интернета, но пока [в iOS есть проблема](https://github.com/novchurch/songs/issues/2). Так как песен немного, решено было обойтись без инструмента для поиска песен внутри приложения. Сделано просто ради освоения новых технологий.
 
 Для того чтобы изменения внесённые в код сайта отобразились у пользователей, нужно изменить версии кешей в третьей и четвёртой строчках файла [`sw.js`](./sw.js).

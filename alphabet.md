@@ -1,6 +1,7 @@
 ---
 layout: default
 title: По алфавиту
+description: Список песен в алфавитном порядке
 ---
 
 {% if site.show_excerpts %}

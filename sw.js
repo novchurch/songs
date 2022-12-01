@@ -1,7 +1,7 @@
 ---
 ---
-const staticCacheName = 'static-cache-novchurch-songs-v019';
-const dynamicCacheName = 'dynamic-cache-novchurch-songs-v019';
+const staticCacheName = 'static-cache-novchurch-songs-v020';
+const dynamicCacheName = 'dynamic-cache-novchurch-songs-v020';
 
 const staticAssets = [
     '{{ "/" | relative_url }}',
@@ -47,7 +47,7 @@ self.addEventListener('activate', async event => {
     console.log('Service worker has been activated');
 });
 
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', async event => {
     console.log(`Trying to fetch ${event.request.url}`);
     event.respondWith(checkCache(event.request));
 });

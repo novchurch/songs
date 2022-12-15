@@ -26,7 +26,8 @@ const staticAssets = [
     '{{ "/assets/fontawesome/icons.svg" | relative_url }}',
     '{{ "/favicon.ico" | relative_url }}',
     '{{ "/js/app.js" | relative_url }}',
-    '{{ "/images/no-image.jpg" | relative_url }}'
+    '{{ "/images/no-image.jpg" | relative_url }}',
+    '{{ "/manifest.json" | relative_url }}'
 ];
 
 self.addEventListener('install', async event => {
